@@ -1,0 +1,1 @@
+SELECT email AS Email FROM PERSON WHERE EMAIL IS NOT NULL having count(*)>1;

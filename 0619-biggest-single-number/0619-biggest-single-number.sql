@@ -1,7 +1,6 @@
-SELECT MAX(num) AS num
-FROM (
-    SELECT num
-    FROM MyNumbers
-    GROUP BY num
-    HAVING COUNT(*) = 1
-) AS singles;
+select max(num) as num from
+(select num 
+from MyNumbers
+group by num
+having count(num) = 1) as new_table;
+

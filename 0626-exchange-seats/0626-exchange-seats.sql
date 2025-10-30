@@ -7,3 +7,5 @@ SELECT
     student
 FROM Seat
 ORDER BY id;
+
+
